@@ -1,0 +1,42 @@
+/* -------------
+* Table Styles
+* -------------
+*/
+.pure-table th,
+.pure-table td {
+    padding: 0.5em 1em;
+}
+.table-responsive {
+    margin-left: -1em;
+    margin-right: -1em;
+    overflow-x: auto;
+    margin-bottom: 1em;
+}
+.table-responsive table {
+    width: 100%;
+    min-width: 35.5em;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+.table-responsive .mq-table {
+    width: 100%;
+    min-width: 44em;
+}
+.mq-table th.highlight {
+    background-color: rgb(255, 234, 133);
+}
+.mq-table td.highlight {
+    background-color: rgb(255, 250, 229);
+}
+.mq-table th.highlight code,
+.mq-table td.highlight code {
+    background: rgb(255, 255, 243);
+}
+.mq-table-mq code {
+    font-size: 0.875em;
+}
+
+.entry-cover {
+    width: 100px;
+    height: 100px;
+}

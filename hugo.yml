@@ -1,0 +1,117 @@
+baseURL: "https://rgeorgia.github.io/journals"
+title: Journies 3:16
+paginate: 15
+theme: PaperMod
+
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+#googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  # minifyOutput: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    menu:
+      main:
+        - name: Posts
+          url: posts/
+          weight: 25
+        - name: Tags
+          url: tags/
+          weight: 30
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Journies 3:16
+  description: "Words from Ron"
+  keywords: [Posts, Journal]
+  author: Ron Georgia
+  images: ["images/netbsd_toaster.png","images/rust_crab.jpg"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto 
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: Ronverbs
+    subtitle: "Words from Ron"
+    imageUrl: "images/stjohn.jpg"
+    imageWidth: 200
+    imageHeight: 200
+    imageTitle: St John
+    buttons:
+      - name: Posts
+        url: posts
+
+  homeInfoParams:
+    Title: "Roverbs 3:16"
+    Content: >
+        Welcome to Roverbs 3:16.
+
+        - **Ronverbs** is a stumbling, bumbling journey of mistakes and learning. 
+
+        - Repo for other projects [Github](https://github.com/rgeorgia).
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/rongeorgia/"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/rongeorgia/"
+    - name: github
+      url: "https://github.com/rgeorgia"
+    - name: kofi
+      url: "https://netbsd.org"
+
+
+  assets:
+    disableHLJS: true # to disable highlight.js
+    disableFingerprinting: true
+    favicon: "images/favicon.png"
+    apple_touch_icon: "images/stjohn.jpg"
+
+  label:
+    text: "Ronverbs"
+    icon: "images/netbsd_icon_orange.png"
+    iconHeight: 45
+
+  cover:
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  editPost:
+    URL: "https://github.com/rgeorgia/journal/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+taxonomies:
+  tag: tags
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
