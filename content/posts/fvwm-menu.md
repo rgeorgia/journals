@@ -1,7 +1,7 @@
 ---
 title: 'FVWM Menus'
 date: 2023-11-23T19:46:27-05:00
-draft: true
+draft: false
 tags: ["rust", "desktop", "programming"]
 slug: "fvwm-menu"
 ---
