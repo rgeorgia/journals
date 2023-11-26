@@ -1,7 +1,7 @@
 ---
 title: "Reading CSV file with Rust"
 date: 2023-11-23T19:46:27-05:00
-draft: false
+draft: true
 categories: ["posts"]
 tags: ["rust", "desktop", "programming"]
 slug: "oxidize"
