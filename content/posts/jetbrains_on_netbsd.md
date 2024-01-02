@@ -1,7 +1,7 @@
 ---
 title: 'Jetbrains On NetBSD'
 date: 2024-01-01T19:02:59-05:00
-draft: true
+draft: false
 tags: ["desktop"]
 slug: "jetbrains-on-netbsd"
 ---
