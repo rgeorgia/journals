@@ -85,6 +85,10 @@ Here's what I did to get things to work.
 
 1. Execute the following command. (If you did not install to the $HOME directory, your location will, of course, be different).
 
-    cd
-2. 
+   ```bash
+   <$INSTALL_DIRECTORY>/bin/pycharm.sh
+   ```
 
+You should be able to enjoy a most excellent IDE!
+
+![Pycharm Pro](images/pycharmpro.png)
