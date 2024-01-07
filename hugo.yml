@@ -39,7 +39,7 @@ languages:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Journies 3:16
+  title: Journey 3:16
   description: "Words from Ron"
   keywords: [Posts, Journal]
   author: Ron Georgia
