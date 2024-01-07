@@ -91,4 +91,4 @@ Here's what I did to get things to work.
 
 You should be able to enjoy a most excellent IDE!
 
-![Pycharm Pro](/static/images/pycharmpro.png)
+![Pycharm Pro](images/pycharmpro.png)
