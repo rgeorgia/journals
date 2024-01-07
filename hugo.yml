@@ -13,6 +13,11 @@ enableEmoji: true
 
 #googleAnalytics: UA-123-45
 
+#module:
+#  mounts:
+#    source: 'images'
+#    target: 'static/images'
+
 minify:
   disableXML: true
   # minifyOutput: true
