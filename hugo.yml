@@ -13,6 +13,11 @@ enableEmoji: true
 
 #googleAnalytics: UA-123-45
 
+#module:
+#  mounts:
+#    source: 'images'
+#    target: 'static/images'
+
 minify:
   disableXML: true
   # minifyOutput: true
@@ -28,11 +33,13 @@ languages:
           weight: 25
         - name: Tags
           url: tags/
-          weight: 30
+          weight: 40
+        - name: About
+          url: about/
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Journies 3:16
+  title: Journey 3:16
   description: "Words from Ron"
   keywords: [Posts, Journal]
   author: Ron Georgia
@@ -66,6 +73,10 @@ params:
     buttons:
       - name: Posts
         url: posts
+      - name: Tech Notes
+        url: notes
+      - name: About
+        url: about
 
   homeInfoParams:
     Title: "Roverbs 3:16"
