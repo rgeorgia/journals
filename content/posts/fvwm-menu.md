@@ -13,7 +13,7 @@ slug: "fvwm-menu"
 
 - [X] List all files with .desktop ext (kind of)
 
-- [ ] read each file
+- [X] read each file
 
 - [ ] build structs for menus
 
@@ -163,3 +163,29 @@ pub struct DesktopEntry {
     pub terminal: bool,
 }
 ```
+
+Now, when I look at the `.desktop` files, some of them have multiple comment lines, mulitple names, etc. I really just want the first one.
+
+For example gparted.desktop has this,
+
+```bash
+[Desktop Entry]
+Name=GParted
+Name[ar]=مُقسِّم‌ج
+Name[bg]=GParted
+Name[br]=GParted
+Name[bs]=GParted
+<snip>
+Comment=Create, reorganize, and delete partitions
+Comment[ar]=أنشئ الأقسام ونظّمها واحذفها
+Comment[bg]=Създаване, подреждане и изтриване на дялове
+Comment[br]=Krouiñ, adaozañ ha dilemel ar parzhadoù
+Comment[bs]=Kreiranje, reorganiziranje i brisanje particija
+Comment[ca]=Creeu, reorganitzeu i suprimiu particions
+```
+
+To me, the `.desktop` files look like toml files. I'll try to use the toml crate to unmarshall the files into the DesktopEntry struct. Hopefully I can avoid a lot of manual checking of values.
+
+Did as search for `toml` and rust from google and that lead me to the toml crate. Also, found this article that simplified a few things. [Rust Load a TOML File](https://codingpackets.com/blog/rust-load-a-toml-file/)
+
+Ok, let's read about reading toml files into a struct.
