@@ -9,8 +9,18 @@ tags: [netbsd, system, desktop, bsd]
 
 ## Current Drive Stats
 
+To find out which drives have been discovered use the sysctl tool.
+
+
 ```bash
-rgeorgia@netpack ~> sudo *gpt* show wd0
+$ sysctl hw.disknames               
+hw.disknames = wd0 dk0 dk1 dk2 wd1 wd2
+```
+
+## Show some drive stats with gpt, not gptchat
+
+```bash
+$ sudo *gpt* show wd0
        start        size  index  contents
            0           1         PMBR
            1           1         Pri GPT header
@@ -33,6 +43,51 @@ dk1: 5721838e-34ee-4255-bc34-6eb569e5fce8, 16610703 blocks at 1936914432, type: 
 ```
 
 ## Adding the new drive
+
+The two drives I have are from a previous system. Their data looks like this. Both disk look the same, but only one is depicted.
+
+```bash
+sudo gpt show wd1
+GPT not found, displaying data from MBR.
+
+  start        size  index  contents
+  0  1953525135         Unused
+  1953525135          32         Sec GPT table
+  1953525167           1         Sec GPT header
+
+```
+I really don't care what was on the disk, so I destroy the gpt partion on both disks.
+
+```bash
+
+sudo gpt destroy wd1
+$ sudo gpt destroy wd2
+$ sudo gpt show wd1  
+GPT not found, displaying data from MBR.
+
+       start        size  index  contents
+           0  1953525168         Unused
+```
+
+## Create a new gpt partition
+
+This is done with the `sudo gpt create` command.
+
+```bash
+
+$ sudo gpt create wd1
+
+$ sudo gpt show wd1
+
+       start        size  index  contents
+           0           1         PMBR
+           1           1         Pri GPT header
+           2          32         Pri GPT table
+          34  1953525101         Unused
+  1953525135          32         Sec GPT table
+  1953525167           1         Sec GPT header
+```
+
 
 ```bash
 rgeorgia@netpack ~> sudo gpt add -a 512k -l Packages -t ffs wd1
