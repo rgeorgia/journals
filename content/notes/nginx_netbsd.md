@@ -1,7 +1,7 @@
 ---
 title: "Nginx NetBSD"
 date: 2022-09-24T16:15:40-04:00
-draft: false
+draft: true
 categories: [notes]
 tags: [netbsd, nginx]
 ---

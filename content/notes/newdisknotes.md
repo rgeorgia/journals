@@ -1,5 +1,5 @@
 ---
-title: "New Disk Notes"
+title: "New Disk Notes - DFLYBSD"
 date: 2021-12-30T15:13:03-05:00
 draft: false
 categories: [notes]
