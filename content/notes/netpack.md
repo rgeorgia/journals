@@ -1,7 +1,7 @@
 ---
 title: "Setup Disk for NetBSD"
 date: 2021-12-30T15:02:42-05:00
-draft: true
+draft: false
 categories: [notes]
 tags: [netbsd, system, desktop, bsd]
 ---
