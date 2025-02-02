@@ -1,7 +1,6 @@
 # baseURL: "https://rgeorgia.github.io/journals"
 baseURL: "https://192.168.4.59:8000/journals"
 title: Journies 3:16
-paginate: 15
 theme: PaperMod
 
 
@@ -35,6 +34,9 @@ languages:
         - name: Tags
           url: tags/
           weight: 40
+        - name: Sans
+          url: sans/
+          weight: 60
         - name: About
           url: about/
 
@@ -76,8 +78,8 @@ params:
         url: posts
       - name: Tech Notes
         url: notes
-      - name: About
-        url: about
+      - name: SANS
+        url: sans
 
   homeInfoParams:
     Title: "Roverbs 3:16"
