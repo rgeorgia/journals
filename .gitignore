@@ -21,3 +21,4 @@ public/*
 *.lock
 
 .vscode/
+themes/*
